@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.java.calculator.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.084 s <<< FAILURE! -- in org.java.calculator.CalculatorTest
+org.java.calculator.CalculatorTest.testDivision -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.ArithmeticException: Cannot divide by zero
+	at org.java.calculator.Calculator.divide(Calculator.java:17)
+	at org.java.calculator.CalculatorTest.testDivision(CalculatorTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
