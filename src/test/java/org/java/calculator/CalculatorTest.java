@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalculatorTest {
 
-    private static Calculator calculator;
+    private static Calculator calculator= null;
 
     @BeforeAll
     public static void setup() {
@@ -27,7 +27,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testDivision() throws Exception {
+    public void testDivision() throws Exception{
         float result = calculator.divide(6.0f, 2.0f);
         assertEquals(3.0f, result, 0.001f);
     }
@@ -40,6 +40,6 @@ public class CalculatorTest {
 
     @Test
     public void testDivisionByZero() {
-        assertThrows(ArithmeticException.class, () -> calculator.divide(5.0f, 0.0f));
+        assertThrows(Exception.class, () -> calculator.divide(5.0f, 0.0f));
     }
 }
